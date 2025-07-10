@@ -1,5 +1,6 @@
 import React from 'react';
-import './Dashboard.css'
+import './Dashboard.css';
+
 
 const MyBookings = () => {
   // Replace with real user bookings fetched from API/backend
