@@ -1,0 +1,90 @@
+
+
+
+
+
+
+  
+
+
+
+   .customers {
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+  }
+  
+  .customers h2 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 30px;
+  }
+  
+  /* Carousel Setup */
+   .carousel-container {
+    width: 100%;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  /* Card Design */
+  .customers-card {
+    background:white ;
+    padding: 5px;
+    border-radius: 15px;
+    width: 300px;
+    margin: 0 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+    flex-shrink: 0;
+    border-left: 5px solid#4fa3ff ;
+  }
+  
+  .customers-card .quote-icon {
+    font-size: 2rem;
+    color: #4fa3ff;
+  }
+  
+  .customers-card p {
+    font-size: 0.95rem;
+    color: black;
+    margin: 10px 0 15px;
+    min-height: 70px;
+  }
+  
+  .customers-card h4 {
+    color: #4fa3ff;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .customers-card small {
+    color: black;
+    display: block;
+  }
+  
+  .customers-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #4fa3ff;
+    margin-top: 10px;
+  }
+  
+ 
+
+
+
+
+
+
+
+ 

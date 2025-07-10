@@ -1,0 +1,85 @@
+.parking {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #f8f9fa;
+
+}
+
+.parking h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #1b1e2e;
+    position: relative;
+}
+
+.parking h2 ::after {
+    display: block;
+    margin: 10px auto 0;
+    width: 60px;
+    height: 3px;
+    background: #00c364;
+    border-radius: 5px;
+}
+
+.parking-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 2rem;
+}
+
+.card {
+    background: #fff;
+    border: 1px dashed #ccc;
+    padding: 2rem;
+    width: 200px;
+    height: 45vh;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px (0,0,0,0.5);
+}
+
+.card h3 {
+    color:#4fa3ff;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.card h3 span {
+    font-size: 1rem;
+    vertical-align: super;
+}
+
+.card h3 small {
+    font-size: 1rem;
+    color: #666;
+    margin-left: 4px;
+}
+
+.card h4 {
+    margin-top: 0.8rem;
+    font-weight: 700;
+    color: #1b1e2e;
+}
+
+.card p {
+    color: #555;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.95rem;
+}
+
+.card button {
+    background: #4fa3ff;
+    border: none;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.card button:hover {
+    background: #009e52;
+}

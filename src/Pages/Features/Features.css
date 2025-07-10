@@ -1,0 +1,110 @@
+.featurespage-hero {
+    background: url('../../assets/images/features-hero.jpg') no-repeat center center/cover;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 3rem;
+    border-radius: 8px;
+    max-width: 80%;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .featurespage-list {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #f9f9f9;
+  }
+  
+  .featurespage-list h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #1b1e2e;
+  }
+  
+  .featurespage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .featurepage-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .featurepage-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .featurepage-card .icon {
+    font-size: 2rem;
+    color: #4fa3ff;
+    margin-bottom: 0.8rem;
+  }
+  
+  .featurepage-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    color: #222;
+  }
+  
+  .featurepage-card p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  .featurespage-cta {
+    background: #4fa3ff;
+    color: white;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  
+  .featurespage-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .featurespage-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .featurespage-cta button {
+    background: white;
+    color: #4fa3ff;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .featurespage-cta button:hover {
+    background: #e5e5e5;
+  }
+  

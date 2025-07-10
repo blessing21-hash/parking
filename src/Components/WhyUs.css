@@ -1,0 +1,64 @@
+.why-choose {
+    display: flex;
+    flex-wrap: wrap;
+   /* background-color: #0f2e47; */
+    color: #fff;
+    padding: 7rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .why-choose__image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    height: 100%;
+  }
+  
+  .why-choose__content {
+    max-width: 500px;
+    /* background-color: #0f2e47; */
+  }
+  
+  .why-choose__content h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: black;
+  }
+  
+  .why-choose__content h2 span {
+    font-weight: bold;
+  }
+  
+  .why-choose__content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    color: black;
+  }
+  
+  .why-choose__benefits {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .why-choose__benefits div {
+    background: #4fa3ff;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 6px;
+    width: 100px;
+  }
+  
+  .why-choose__benefits span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .why-choose__benefits :hover{
+    background-color:#009e52;
+  }

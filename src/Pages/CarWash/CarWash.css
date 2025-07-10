@@ -1,0 +1,184 @@
+
+
+
+
+
+   /* Hero Section */
+.car-hero {
+  background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../assets/images/back.jpeg') no-repeat center center/cover;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* text-shadow: 1px 1px 4px rgba(0,0,0,0.7); */
+  height: 58vh;
+  border-radius: 12px;
+}
+
+.car-hero h1{
+  font-size: 4rem;
+  
+}
+.car-hero p{
+  font-size: 1.3rem;
+}
+/* Packages */
+.packages {
+  padding: 40px 20px;
+  text-align: center;
+
+}
+
+.package-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.package-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  width: 280px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-8px);
+}
+
+.package-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.package-card h3 {
+  margin-bottom: 10px;
+  color: #0077cc;
+}
+
+.price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.package-card ul {
+  list-style: none;
+  padding: 0;
+  color: #555;
+}
+
+.package-card li {
+  margin-bottom: 8px;
+}
+
+/* Booking Form */
+.booking-section {
+  padding: 50px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.booking-form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form button {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  border-color: #0077cc;
+}
+
+.booking-form button {
+  background-color: #0077cc;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover {
+  background-color: #005fa3;
+}
+
+/* Benefits Section */
+.wash-benefits {
+  background: #e6f0fa;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wash-benefits h2 {
+  color: #004a99;
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+}
+
+.benefits-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.benefit-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  padding: 30px 25px;
+  width: 230px;
+  font-size: 1.1rem;
+  color: #003366;
+  line-height: 1.5;
+  font-weight: 600;
+  user-select: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.benefit-card strong {
+  font-size: 1.4rem;
+  color: #0077cc;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.benefit-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 119, 204, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .package-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefits-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
