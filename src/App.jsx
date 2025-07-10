@@ -16,7 +16,7 @@ import AboutUs from './Pages/AboutUs/AboutUs';
 import Features from './Pages/Features/Features';
 import UserDashboard from './Dashboards/UserDashboard';
 import AdminDashboard from './Dashboards/AdminDashboard';
-import ProtectedRoute from './components/Protected';
+import ProtectedRoute from './Components/Protected';
 
 const App = () => {
   return (
