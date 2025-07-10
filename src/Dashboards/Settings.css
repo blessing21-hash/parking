@@ -1,0 +1,20 @@
+.settings-form label {
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  .settings-form button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    border: none;
+    background-color: #4fa3ff;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .settings-form button:hover {
+    background-color: #3a82d7;
+  }
+  

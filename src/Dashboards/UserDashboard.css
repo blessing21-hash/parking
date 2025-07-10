@@ -1,0 +1,32 @@
+.dashboard-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .dashboard-nav {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4fa3ff;
+    padding-bottom: 10px;
+  }
+  
+  .dashboard-nav a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+  }
+  
+  .dashboard-nav a.active-link {
+    color: #4fa3ff;
+    border-bottom: 3px solid #4fa3ff;
+  }
+  

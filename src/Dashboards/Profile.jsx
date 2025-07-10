@@ -1,5 +1,5 @@
 import React from 'react';
-import './Dashboard.css'
+import './Profile.css'
 
 const Profile = () => {
   const user = JSON.parse(localStorage.getItem('user'));

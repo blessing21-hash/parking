@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Dashboard.css'
+import './Settings.css'
 
 const Settings = () => {
   const [emailNotifications, setEmailNotifications] = useState(true);

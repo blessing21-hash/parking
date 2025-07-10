@@ -2,7 +2,7 @@
 
 
 import React from 'react';
-import './Dashboard.css';
+import './UserDashboard.css';
 import { Routes, Route, NavLink } from 'react-router-dom';
 
 import Profile from './Profile';
