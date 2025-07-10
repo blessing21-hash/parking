@@ -7,7 +7,7 @@ import { Routes, Route, NavLink } from 'react-router-dom';
 
 import Profile from '../Dashboards/Profile';
 import Settings from '../Dashboards/Settings';
-import MyBookings from '../Dashboards/Mybookings';
+import MyBookings from './MyBookings';
 
 const UserDashboard = () => {
   return (
