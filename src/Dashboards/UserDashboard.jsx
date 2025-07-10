@@ -5,8 +5,8 @@ import React from 'react';
 import './Dashboard.css';
 import { Routes, Route, NavLink } from 'react-router-dom';
 
-import Profile from '../Dashboards/Profile';
-import Settings from '../Dashboards/Settings';
+import Profile from './Profile';
+import Settings from './Settings';
 import MyBookings from './MyBookings';
 
 const UserDashboard = () => {
