@@ -14,8 +14,8 @@ import CarWash from './Pages/CarWash/CarWash';
 import ParkingOptions from './Pages/Parking/Parking';
 import AboutUs from './Pages/AboutUs/AboutUs';
 import Features from './Pages/Features/Features';
-import UserDashboard from './dashboards/UserDashboard';
-import AdminDashboard from './dashboards/AdminDashboard';
+import UserDashboard from './Dashboards/UserDashboard';
+import AdminDashboard from './Dashboards/AdminDashboard';
 import ProtectedRoute from './components/Protected';
 
 const App = () => {
