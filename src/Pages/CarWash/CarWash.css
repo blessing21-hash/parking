@@ -133,9 +133,9 @@
 }
 
 .wash-benefits h2 {
-  color: #004a99;
+  color:black ;
   margin-bottom: 40px;
-  font-size: 2.2rem;
+  font-size: 2.rem;
 }
 
 .benefits-grid {
@@ -152,7 +152,7 @@
   padding: 30px 25px;
   width: 230px;
   font-size: 1.1rem;
-  color: #003366;
+  color: black;
   line-height: 1.5;
   font-weight: 600;
   user-select: none;
@@ -160,8 +160,8 @@
 }
 
 .benefit-card strong {
-  font-size: 1.4rem;
-  color: #0077cc;
+  font-size: 1.rem;
+  color: black;
   display: block;
   margin-bottom: 10px;
 }

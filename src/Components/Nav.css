@@ -1,4 +1,4 @@
-.nav {
+/* .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,4 +43,99 @@
 
 
 
+   */
+
+
+   .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 1rem 2rem;
+    color: black;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .login-link {
+    color: #333;
+  }
+  
+  .login-link:hover {
+    color: #4fa3ff;
+  }
+  
+  .signup-btn {
+    background-color: #4fa3ff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-btn:hover {
+    background-color: #3a82d7;
+  }
+  
+  /* Hamburger menu icon */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #4fa3ff;
+    transition: 0.4s;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background-color: #fff;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.5rem 0;
+      display: none;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  }
   
