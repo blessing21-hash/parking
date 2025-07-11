@@ -1,27 +1,37 @@
-.why-choose {
+
+
+
+  .why-choose {
     display: flex;
     flex-wrap: wrap;
-   /* background-color: #0f2e47; */
     color: #fff;
-    padding: 7rem;
+    padding: 7rem 2rem;
     gap: 2rem;
     align-items: center;
     justify-content: center;
-    
+  }
+  
+  /* Image container */
+  .why-choose__image {
+    flex: 1 1 400px;
+    max-width: 400px;
+    height: auto;
   }
   
   .why-choose__image img {
     width: 100%;
-    max-width: 400px;
     border-radius: 8px;
-    height: 100%;
+    height: auto;
+    display: block;
   }
   
+  /* Content container */
   .why-choose__content {
+    flex: 1 1 500px;
     max-width: 500px;
-    /* background-color: #0f2e47; */
   }
   
+  /* Headings */
   .why-choose__content h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -32,6 +42,7 @@
     font-weight: bold;
   }
   
+  /* Paragraph */
   .why-choose__content p {
     font-size: 1rem;
     line-height: 1.5;
@@ -39,26 +50,93 @@
     color: black;
   }
   
+  /* Benefits container */
   .why-choose__benefits {
     display: flex;
     gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
+  /* Individual benefit box */
   .why-choose__benefits div {
     background: #4fa3ff;
     padding: 1rem;
     text-align: center;
     border-radius: 6px;
     width: 100px;
+    transition: background-color 0.3s ease;
+    cursor: default;
   }
   
+  .why-choose__benefits div:hover {
+    background-color: #009e52;
+  }
+  
+  /* Benefit number */
   .why-choose__benefits span {
     font-size: 1.5rem;
     font-weight: bold;
     display: block;
     margin-bottom: 0.5rem;
   }
-
-  .why-choose__benefits :hover{
-    background-color:#009e52;
+  
+  /* === Responsive Breakpoints === */
+  
+  @media (max-width: 768px) {
+    .why-choose {
+      padding: 4rem 1rem;
+    }
+  
+    .why-choose__content h2 {
+      font-size: 1.6rem;
+    }
+  
+    .why-choose__content p {
+      font-size: 0.95rem;
+    }
+  
+    .why-choose__benefits div {
+      width: 80px;
+      padding: 0.8rem;
+    }
+  
+    .why-choose__benefits span {
+      font-size: 1.2rem;
+    }
   }
+  
+  @media (max-width: 480px) {
+    .why-choose {
+      flex-direction: column;
+      padding: 3rem 1rem;
+    }
+  
+    .why-choose__image,
+    .why-choose__content {
+      max-width: 100%;
+      flex: none;
+    }
+  
+    .why-choose__content h2 {
+      font-size: 1.4rem;
+    }
+  
+    .why-choose__content p {
+      font-size: 0.9rem;
+    }
+  
+    .why-choose__benefits {
+      gap: 1rem;
+    }
+  
+    .why-choose__benefits div {
+      width: 70px;
+      padding: 0.6rem;
+    }
+  
+    .why-choose__benefits span {
+      font-size: 1rem;
+    }
+  }
+  

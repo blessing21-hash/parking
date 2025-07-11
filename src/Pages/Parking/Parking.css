@@ -1,138 +1,200 @@
 
   
-  
 
-  .fullscreen {
-    height: 85vh;
-    background: url('../../assets/images/park.jpeg') no-repeat center center/cover;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .parking-hero .overlay {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 3rem;
-    color: white;
-    max-width: 100%;
-    border-radius: 8px;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  
+
+
+
+
+
+
+  /* HERO SECTION */
+.fullscreen {
+  height: 85vh;
+  background:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../../assets/images/park.jpeg') no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.parking-hero .overlay {
+  background-color:rgba(0, 0, 0, 0.0);
+  padding: 2rem;
+  color: white;
+  max-width: 90%;
+  border-radius: 8px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.parking-hero .overlay h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.parking-hero .overlay p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+/* PARKING TYPES */
+.parking-types h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.type-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+}
+
+.type-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.separator-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  margin: 2rem auto;
+  display: block;
+}
+
+.type-card {
+  background: #f3f3f3;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+.type-card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* BOOKING CTA */
+.booking-cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('../../assets/images/book.jpeg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.booking-cta button {
+  background: #4fa3ff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.booking-cta button:hover {
+  background: #e7e7e7;
+  color: #000;
+}
+
+/* CONTACT FORM */
+.parking-contact {
+  padding: 4rem 2rem;
+  background: #f1f1f1;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.contact-form button {
+  background: #4fa3ff;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 1024px) {
   .parking-hero .overlay h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
+    font-size: 2.2rem;
   }
-  
-  
+
   .parking-hero .overlay p {
-    font-size: 1.2rem;
-    font-weight: 400;
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.6;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .fullscreen {
+    height: auto;
+    padding: 3rem 1rem;
   }
 
-  .parking-types h2{
-    text-align: center;
-    font-size: 2rem;
+  .parking-hero .overlay {
+    height: auto;
+    padding: 2rem 1rem;
   }
-  
+
   .type-layout {
-    display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    padding: 4rem 2rem;
-    flex-wrap: wrap;
   }
-  
-  .type-column {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .separator-image img {
-    width: 88%;
-    height: 70vh;
-    border-radius: 12px;
-    margin: 2rem;
-  }
-  
-  .type-card {
-    background: #f3f3f3;
-    padding: 1.5rem;
-    border-radius: 8px;
-    width: 250px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .type-card .icon {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Booking CTA */
-  .booking-cta {
-    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../../assets/images/book.jpeg') ;
 
-    color: white;
-    text-align: center;
-    padding: 4rem 2rem;
+  .separator-image img {
+    height: auto;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .parking-hero .overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .parking-hero .overlay p {
+    font-size: 0.95rem;
+  }
+
   .booking-cta button {
-    background:#4fa3ff ;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border: none;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .booking-cta button:hover {
-    background: #e7e7e7;
-  }
-  
-  /* Contact Form */
-  .parking-contact {
-    padding: 4rem 2rem;
-    background: #f1f1f1;
-    text-align: center;
-  }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 500px;
-    margin: auto;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    padding: 0.8rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
     width: 100%;
   }
-  
-  .contact-form button {
-    background: #4fa3ff;
-    color: white;
-    border: none;
-    padding: 0.8rem;
-    border-radius: 5px;
-    font-weight: bold;
+
+  .type-card {
+    max-width: 90%;
   }
-  
+}

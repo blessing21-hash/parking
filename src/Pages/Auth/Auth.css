@@ -1,15 +1,21 @@
-.auth-container {
+
+
+
+  .auth-container {
     background-color: #f5faff;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     margin: 100px auto;
     padding: 30px 20px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
   
   .auth-container h2 {
     margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #222;
   }
   
   .auth-container form {
@@ -22,7 +28,7 @@
     margin-bottom: 12px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    font-size: 14px;
+    font-size: 1rem;
   }
   
   .auth-container button {
@@ -32,6 +38,7 @@
     border: none;
     border-radius: 6px;
     font-weight: bold;
+    font-size: 1rem;
     cursor: pointer;
     transition: 0.3s;
   }
@@ -44,6 +51,51 @@
     color: #007bff;
     margin-top: 15px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 0.95rem;
+  }
+  
+  /* === Responsive Breakpoints === */
+  @media (max-width: 768px) {
+    .auth-container {
+      margin: 60px auto;
+      padding: 25px 15px;
+    }
+  
+    .auth-container h2 {
+      font-size: 1.6rem;
+    }
+  
+    .auth-container button {
+      padding: 10px;
+      font-size: 1rem;
+    }
+  
+    .toggle-link {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .auth-container {
+      margin: 40px 10px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+  
+    .auth-container h2 {
+      font-size: 1.4rem;
+    }
+  
+    .auth-container input {
+      font-size: 0.95rem;
+    }
+  
+    .auth-container button {
+      font-size: 0.95rem;
+    }
+  
+    .toggle-link {
+      font-size: 0.85rem;
+    }
   }
   

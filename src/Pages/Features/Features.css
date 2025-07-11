@@ -1,15 +1,17 @@
-.featurespage-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('../../assets/images/features.jpeg') no-repeat center center/cover;
+
+
+  .featurespage-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../../assets/images/features.jpeg') no-repeat center center/cover;
     height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
+    padding: 2rem;
   }
   
   .hero-content {
-    /* background-color: rgba(0, 0, 0, 0.6); */
     padding: 3rem;
     border-radius: 8px;
     max-width: 80%;
@@ -76,7 +78,7 @@
   }
   
   .featurespage-cta {
-    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../../assets/images/download.jpeg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../../assets/images/download.jpeg') center/cover no-repeat;
     color: white;
     text-align: center;
     padding: 3rem 2rem;
@@ -93,7 +95,7 @@
   }
   
   .featurespage-cta button {
-    background:#4fa3ff ;
+    background: #4fa3ff;
     color: white;
     border: none;
     padding: 0.8rem 2rem;
@@ -106,5 +108,90 @@
   
   .featurespage-cta button:hover {
     background: #e5e5e5;
+    color: black;
+  }
+  
+  /* === RESPONSIVE BREAKPOINTS === */
+  
+  @media (max-width: 1024px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-content p {
+      font-size: 1.1rem;
+    }
+  
+    .featurespage-list h2 {
+      font-size: 2.2rem;
+    }
+  
+    .featurespage-cta h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .featurespage-hero {
+      height: auto;
+      padding: 3rem 1rem;
+    }
+  
+    .hero-content {
+      padding: 2rem 1rem;
+      max-width: 100%;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .featurespage-list {
+      padding: 3rem 1rem;
+    }
+  
+    .featurespage-list h2 {
+      font-size: 2rem;
+    }
+  
+    .featurespage-cta {
+      padding: 2rem 1rem;
+    }
+  
+    .featurespage-cta p {
+      font-size: 1rem;
+    }
+  
+    .featurespage-cta button {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .hero-content p {
+      font-size: 0.95rem;
+    }
+  
+    .featurespage-list h2,
+    .featurespage-cta h2 {
+      font-size: 1.6rem;
+    }
+  
+    .featurespage-cta p {
+      font-size: 0.95rem;
+    }
+  
+    .featurepage-card {
+      padding: 1.5rem 1rem;
+    }
   }
   

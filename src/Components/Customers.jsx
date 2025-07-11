@@ -1,13 +1,6 @@
 
 
 
-
-
-
-
-
-
-
 import React, { useEffect, useState } from 'react';
 import '../Components/Customers.css';
 import blessing from '../assets/images/blessing.jpg';

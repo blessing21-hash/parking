@@ -1,13 +1,12 @@
 
 
 
-
-
-
-
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+
 import './Home.css';
 import Navbar from '../../Components/Navbar';
 import Footer from '../../Components/Footer';
@@ -71,7 +70,6 @@ const UserHome = () => {
     setIndex((index - cardsToShow + testimonials.length) % testimonials.length);
   };
 
-  // Get 3 testimonials to display, wrap around array
   const visibleTestimonials = [];
   for (let i = 0; i < cardsToShow; i++) {
     visibleTestimonials.push(testimonials[(index + i) % testimonials.length]);
@@ -83,7 +81,7 @@ const UserHome = () => {
     const author = e.target.elements.author.value.trim();
 
     if (text && author) {
-      const newReview = { text, author, image: "https://randomuser.me/api/portraits/lego/1.jpg" }; // Default avatar for new reviews
+      const newReview = { text, author, image: "https://randomuser.me/api/portraits/lego/1.jpg" };
       const stored = JSON.parse(localStorage.getItem('userReviews')) || [];
       stored.push(newReview);
       localStorage.setItem('userReviews', JSON.stringify(stored));
@@ -91,6 +89,13 @@ const UserHome = () => {
       e.target.reset();
     }
   };
+
+  const customIcon = new L.Icon({
+    iconUrl: "https://unpkg.com/leaflet@1.9.3/dist/images/marker-icon.png",
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+  });
 
   return (
     <div>
@@ -109,8 +114,6 @@ const UserHome = () => {
             <button className="cta-btn">Find parking</button>
           </Link>
         </section>
-
-        
 
         {/* About */}
         <section className="about">
@@ -158,12 +161,35 @@ const UserHome = () => {
         {/* Map Preview */}
         <section className="map-preview">
           <h2>Parking Near You</h2>
-          <div className="map-box">{/* embed map later */}</div>
+          <div className="map-box">
+            <MapContainer
+              center={[-17.8292, 31.0522]}
+              zoom={13}
+              scrollWheelZoom={false}
+              style={{ height: "100%", width: "100%" }}
+            >
+              <TileLayer
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                attribution="&copy; OpenStreetMap contributors"
+              />
+              <Marker position={[-17.8292, 31.0522]} icon={customIcon}>
+                <Popup>Harare CBD Parking Spot</Popup>
+              </Marker>
+              <Marker position={[-17.7905, 31.0456]} icon={customIcon}>
+                <Popup>Avondale Parking</Popup>
+              </Marker>
+              <Marker position={[-17.7676, 31.0842]} icon={customIcon}>
+                <Popup>Borrowdale Parking</Popup>
+              </Marker>
+            </MapContainer>
+          </div>
         </section>
       </div>
-      <Footer/>
+
+      <Footer />
     </div>
   );
 };
 
 export default UserHome;
+

@@ -1,6 +1,7 @@
 
 
-   .features-section {
+
+  .features-section {
     padding: 4rem 2rem;
     background-color: #fff;
     display: flex;
@@ -20,18 +21,25 @@
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
   }
   
   .features-card:hover {
     transform: translateY(-5px);
-    background-color:#009e52;
+    background-color: #009e52;
+    color: white;
+  }
+  
+  .features-card:hover .icon {
+    color: white;
   }
   
   .features-card .icon {
     font-size: 2.5rem;
     color: #4fa3ff;
     margin-bottom: 1rem;
+    transition: color 0.3s ease;
   }
   
   .features-card h3 {
@@ -39,11 +47,67 @@
     margin-bottom: 0.5rem;
     font-weight: 600;
     color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .features-card:hover h3 {
+    color: white;
   }
   
   .features-card p {
     font-size: 0.95rem;
     color: #666;
     line-height: 1.6;
+    transition: color 0.3s ease;
+  }
+  
+  .features-card:hover p {
+    color: #e0e0e0;
+  }
+  
+  /* === Responsive Breakpoints === */
+  @media (max-width: 768px) {
+    .features-section {
+      padding: 3rem 1rem;
+    }
+  
+    .features-card {
+      padding: 1.5rem;
+    }
+  
+    .features-card .icon {
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
+    }
+  
+    .features-card h3 {
+      font-size: 1.1rem;
+    }
+  
+    .features-card p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .features-section {
+      padding: 2rem 1rem;
+    }
+  
+    .features-card {
+      padding: 1rem;
+    }
+  
+    .features-card .icon {
+      font-size: 1.8rem;
+    }
+  
+    .features-card h3 {
+      font-size: 1rem;
+    }
+  
+    .features-card p {
+      font-size: 0.85rem;
+    }
   }
   

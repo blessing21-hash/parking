@@ -1,137 +1,9 @@
-/* .about-hero {
-    height: 85vh;
-    background: url('../../assets/images/parking-hero.jpg') no-repeat center center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    text-align: center;
-  }
-  
-  .about-hero .overlay {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 3rem;
-    color: #fff;
-    border-radius: 8px;
-    max-width: 90%;
-  }
-  
-  .our-story,
-  .our-values,
-  .founder-video,
-  .meet-team,
-  .about-cta {
-    padding: 4rem 2rem;
-    text-align: center;
-    background: #f9f9f9;
-  }
-  
-  .our-story h2,
-  .our-values h2,
-  .founder-video h2,
-  .meet-team h2,
-  .about-cta h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #1b1e2e;
-  }
-  
-  .our-story p,
-  .founder-video p,
-  .about-cta p {
-    max-width: 700px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-    color: #555;
-  }
-  
-  .value-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-  }
-  
-  .value-card {
-    background: #fff;
-    padding: 2rem;
-    width: 250px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .founder-video .video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%; 
-    height: 0;
-    overflow: hidden;
-    max-width: 800px;
-    margin: 2rem auto 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .founder-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .team-grid {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-  }
-  
-  .team-member {
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 10px;
-    width: 200px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  }
-  
-  .team-member img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-bottom: 0.8rem;
-  }
-  
-  .about-cta {
-    background-color: #4fa3ff;
-    color: #fff;
-  }
-  
-  .about-cta button {
-    background: #fff;
-    color: #4fa3ff;
-    padding: 0.7rem 1.5rem;
-    font-weight: bold;
-    margin-top: 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-
-
-
- */
-
-
 
 
 
   .about-hero {
     height: 85vh;
-    background: url('../../assets/images/parking-hero.jpg') no-repeat center center/cover;
+    background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/images/about.jpeg') no-repeat center center/cover;
     position: relative;
     display: flex;
     align-items: center;
@@ -140,7 +12,7 @@
   }
   
   .about-hero .overlay {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.0);
     padding: 3rem;
     color: #fff;
     border-radius: 8px;
@@ -256,13 +128,13 @@
   
   /* Call to Action */
   .about-cta {
-    background-color: #4fa3ff;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/images/now.jpeg');
     color: #fff;
   }
   
   .about-cta button {
-    background: #fff;
-    color: #4fa3ff;
+    background:#4fa3ff;
+    color: white;
     padding: 0.7rem 1.5rem;
     font-weight: bold;
     margin-top: 1rem;
@@ -271,6 +143,13 @@
     cursor: pointer;
   }
   
+  .about-cta h2{
+    color: white;
+  }
+
+  .about-cta p{
+    color: white;
+  }
   /* Responsive Styles */
   @media screen and (max-width: 768px) {
     .about-hero h1 {

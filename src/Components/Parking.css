@@ -1,75 +1,88 @@
+
+
+
 .parking {
     text-align: center;
     padding: 4rem 2rem;
     background: #f8f9fa;
-
-}
-
-.parking h2 {
+  }
+  
+  .parking h2 {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 2rem;
     color: #1b1e2e;
     position: relative;
-}
-
-.parking h2 ::after {
+  }
+  
+  /* Fix space before ::after */
+  .parking h2::after {
+    content: "";
     display: block;
     margin: 10px auto 0;
     width: 60px;
     height: 3px;
     background: #00c364;
     border-radius: 5px;
-}
-
-.parking-cards {
+  }
+  
+  .parking-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
     margin-top: 2rem;
-}
-
-.card {
+  }
+  
+  .card {
     background: #fff;
     border: 1px dashed #ccc;
     padding: 2rem;
     width: 200px;
     height: 45vh;
     border-radius: 8px;
-    box-shadow: 0 2px 8px (0,0,0,0.5);
-}
-
-.card h3 {
-    color:#4fa3ff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* fixed box-shadow syntax */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  }
+  
+  .card h3 {
+    color: #4fa3ff;
     font-size: 2rem;
     font-weight: 800;
-}
-
-.card h3 span {
+  }
+  
+  .card h3 span {
     font-size: 1rem;
     vertical-align: super;
-}
-
-.card h3 small {
+  }
+  
+  .card h3 small {
     font-size: 1rem;
     color: #666;
     margin-left: 4px;
-}
-
-.card h4 {
+  }
+  
+  .card h4 {
     margin-top: 0.8rem;
     font-weight: 700;
     color: #1b1e2e;
-}
-
-.card p {
+  }
+  
+  .card p {
     color: #555;
     margin: 1rem 0 1.5rem;
     font-size: 0.95rem;
-}
-
-.card button {
+    flex-grow: 1;
+  }
+  
+  .card button {
     background: #4fa3ff;
     border: none;
     color: #fff;
@@ -78,8 +91,68 @@
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s ease;
-}
-
-.card button:hover {
+  }
+  
+  .card button:hover {
     background: #009e52;
-}
+  }
+  
+  /* === Responsive Breakpoints === */
+  
+  @media (max-width: 768px) {
+    .parking h2 {
+      font-size: 1.7rem;
+    }
+  
+    .card {
+      width: 45%;
+      height: auto;
+      padding: 1.5rem;
+    }
+  
+    .card h3 {
+      font-size: 1.6rem;
+    }
+  
+    .card h4 {
+      font-size: 1.1rem;
+    }
+  
+    .card p {
+      font-size: 0.9rem;
+    }
+  
+    .card button {
+      padding: 0.5rem 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .parking h2 {
+      font-size: 1.4rem;
+    }
+  
+    .card {
+      width: 100%;
+      padding: 1rem;
+      height: auto;
+    }
+  
+    .card h3 {
+      font-size: 1.4rem;
+    }
+  
+    .card h4 {
+      font-size: 1rem;
+    }
+  
+    .card p {
+      font-size: 0.85rem;
+    }
+  
+    .card button {
+      width: 100%;
+      padding: 0.6rem;
+    }
+  }
+  

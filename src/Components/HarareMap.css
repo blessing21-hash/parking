@@ -1,52 +1,65 @@
 
 
-  .harare-map-section {
-    padding: 4rem 2rem ;
-    background-color: #fff;
+  .location-list .no-result {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    padding: 8px;
   }
   
-  .section-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    border-left: 5px solid #4fa3ff;
-    padding-left: 0.5rem;
+
+
+
+
+
+  .harare-map-section {
+    padding: 2rem;
+    background: #f9f9f9;
   }
   
   .harare-map-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 4rem;
+    gap: 2rem;
     justify-content: center;
+    align-items: flex-start;
   }
   
   .map-sidebar {
-    width: 280px;
-    background: #f9f9f9;
+    flex: 1 1 250px;
+    max-width: 300px;
+    background: #fff;
     border-radius: 8px;
     padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+  
+  .section-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #333;
   }
   
   .search-bar {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    background: #fff;
-    padding: 0.5rem 1rem;
+    background: #f1f1f1;
+    padding: 0.5rem;
     border-radius: 6px;
-    border: 1px solid #ddd;
     margin-bottom: 1rem;
   }
   
   .search-bar input {
     border: none;
     outline: none;
+    padding: 0.4rem;
     flex: 1;
+    background: transparent;
   }
   
   .filter-icon {
-    color: #999;
+    margin-left: 8px;
+    color: #555;
   }
   
   .location-list {
@@ -56,59 +69,47 @@
   }
   
   .location-list li {
-    padding: 0.7rem 0;
-    border-bottom: 1px solid #eee;
+    padding: 0.6rem;
+    border-radius: 4px;
+    margin-bottom: 4px;
     cursor: pointer;
+    background: #e9f0ff;
+    transition: background 0.2s;
   }
   
-  .map-image {
-    position: relative;
-    max-width: 600px;
-    flex: 1;
+  .location-list li:hover {
+    background: #cde4ff;
   }
   
-  .map-image img {
-    width: 100%;
-    border-radius: 8px;
-  }
-  
-  /* Map pins */
-  .pin {
-    position: absolute;
-    background:#4fa3ff;
+  .location-list li.active {
+    background: #4fa3ff;
     color: white;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 0.75rem;
     font-weight: bold;
   }
   
-  /* Customize positions */
-  .pin.cbd {
-    top: 45%;
-    left: 48%;
-  }
-  .pin.avondale {
-    top: 38%;
-    left: 35%;
-  }
-  .pin.borrowdale {
-    top: 25%;
-    left: 60%;
+  .map {
+    flex: 2 1 500px;
+    min-height: 60vh;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
   }
   
+  /* Mobile layout */
   @media (max-width: 768px) {
-    .harare-map-container {
-      flex-direction: column;
-      align-items: center;
+    .map {
+      flex: 1 1 100%;
+      height: 50vh;
     }
   
     .map-sidebar {
       width: 100%;
+      max-width: 100%;
     }
   
-    .map-image {
-      width: 100%;
+    .harare-map-container {
+      flex-direction: column;
+      align-items: stretch;
     }
   }
   

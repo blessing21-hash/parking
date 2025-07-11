@@ -1,14 +1,7 @@
 
 
-
-
-
-
-  
-
-
-
-   .customers {
+ 
+  .customers {
     padding: 60px 20px;
     text-align: center;
     background: white;
@@ -20,23 +13,26 @@
     margin-bottom: 30px;
   }
   
-  /* Carousel Setup */
-   .carousel-container {
+  /* Carousel container holds the track */
+  .carousel-container {
     width: 100%;
     overflow: hidden;
     max-width: 1000px;
     margin: 0 auto;
   }
   
+  /* Carousel track slides left/right */
   .carousel-track {
     display: flex;
     transition: transform 0.6s ease-in-out;
+    gap: 20px;
+    padding-bottom: 10px;
   }
   
-  /* Card Design */
+  /* Customer testimonial card */
   .customers-card {
-    background:white ;
-    padding: 5px;
+    background: white;
+    padding: 15px 10px;
     border-radius: 15px;
     width: 300px;
     margin: 0 10px;
@@ -44,14 +40,19 @@
     position: relative;
     text-align: center;
     flex-shrink: 0;
-    border-left: 5px solid#4fa3ff ;
+    border-left: 5px solid #4fa3ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
+  /* Quote icon */
   .customers-card .quote-icon {
     font-size: 2rem;
     color: #4fa3ff;
   }
   
+  /* Testimonial text */
   .customers-card p {
     font-size: 0.95rem;
     color: black;
@@ -59,32 +60,77 @@
     min-height: 70px;
   }
   
+  /* Name */
   .customers-card h4 {
     color: #4fa3ff;
     font-weight: bold;
     margin-bottom: 5px;
   }
   
+  /* Role or small text */
   .customers-card small {
     color: black;
     display: block;
+    margin-bottom: 10px;
   }
   
+  /* Avatar */
   .customers-card img {
     width: 60px;
     height: 60px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #4fa3ff;
-    margin-top: 10px;
+    margin: 10px auto 0;
   }
   
- 
-
-
-
-
-
-
-
- 
+  /* === Responsive Breakpoints === */
+  @media (max-width: 768px) {
+    .customers h2 {
+      font-size: 2rem;
+    }
+  
+    .customers-card {
+      width: 250px;
+      margin: 0 8px;
+      padding: 12px 8px;
+    }
+  
+    .customers-card p {
+      font-size: 0.9rem;
+      min-height: 60px;
+    }
+  
+    .customers-card img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .customers h2 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+    }
+  
+    .customers-card {
+      width: 200px;
+      margin: 0 6px;
+      padding: 10px 6px;
+    }
+  
+    .customers-card p {
+      font-size: 0.85rem;
+      min-height: 50px;
+    }
+  
+    .customers-card h4 {
+      font-size: 1rem;
+    }
+  
+    .customers-card img {
+      width: 45px;
+      height: 45px;
+    }
+  }
+  

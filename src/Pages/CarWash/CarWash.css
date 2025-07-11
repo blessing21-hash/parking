@@ -1,8 +1,6 @@
 
 
 
-
-
    /* Hero Section */
 .car-hero {
   background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../assets/images/back.jpeg') no-repeat center center/cover;
@@ -126,10 +124,10 @@
 
 /* Benefits Section */
 .wash-benefits {
-  background: #e6f0fa;
+
   padding: 60px 20px;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
 }
 
 .wash-benefits h2 {
