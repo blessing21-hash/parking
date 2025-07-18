@@ -9,6 +9,7 @@
     text-align: center;
     color: white;
     padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .hero-content {
@@ -32,6 +33,7 @@
     padding: 4rem 2rem;
     text-align: center;
     background: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .featurespage-list h2 {
@@ -82,6 +84,7 @@
     color: white;
     text-align: center;
     padding: 3rem 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .featurespage-cta h2 {

@@ -3,7 +3,7 @@
 
 
 
-   /* AdminDashboard.css */
+   
 .admin-dashboard {
   display: flex;
   min-height: 100vh;
@@ -120,7 +120,7 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .admin-dashboard {
     flex-direction: column;
@@ -182,4 +182,5 @@
   .admin-content h2 {
     font-size: 1.2rem;
   }
-}
+} 
+

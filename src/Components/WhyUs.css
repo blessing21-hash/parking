@@ -1,7 +1,7 @@
 
 
 
-  .why-choose {
+  .why-section {
     display: flex;
     flex-wrap: wrap;
     color: #fff;
@@ -9,6 +9,7 @@
     gap: 2rem;
     align-items: center;
     justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   /* Image container */

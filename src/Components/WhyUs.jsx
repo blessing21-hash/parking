@@ -7,7 +7,7 @@ import whyImage from '../assets/images/whyus.png'; // Replace with your actual i
 
 const WhyUS = () => {
   return (
-    <section className="why-choose">
+    <section className="why-section">
       <div className="why-choose__image">
         <img src={whyImage} alt="car handover" />
       </div>

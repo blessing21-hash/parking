@@ -6,6 +6,7 @@
     background-color: #fff;
     display: flex;
     justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .features-grid {

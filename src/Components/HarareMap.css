@@ -5,6 +5,7 @@
     color: #999;
     font-style: italic;
     padding: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
 
@@ -15,6 +16,7 @@
   .harare-map-section {
     padding: 2rem;
     background: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .harare-map-container {

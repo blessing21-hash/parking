@@ -11,6 +11,7 @@
   /* text-shadow: 1px 1px 4px rgba(0,0,0,0.7); */
   height: 58vh;
   border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .car-hero h1{
@@ -42,6 +43,7 @@
   width: 280px;
   padding: 20px;
   transition: transform 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .package-card:hover {
@@ -83,6 +85,7 @@
   padding: 50px 20px;
   background: #f9f9f9;
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .booking-form {
@@ -127,7 +130,7 @@
 
   padding: 60px 20px;
   text-align: center;
- 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .wash-benefits h2 {
