@@ -157,6 +157,7 @@ import Features from './Pages/Features/Features';
 import UserDashboard from './Dashboards/UserDashboard';
 import AdminDashboard from './Dashboards/AdminDashboard';
 import ProtectedRoute from './Components/Protected';
+import ParkingSpaces from './Pages/Parkingspace/Parkingspace';
 
 function App() {
   const [bookings, setBookings] = useState([]);
@@ -271,6 +272,9 @@ function App() {
             </ProtectedRoute>
           }
         />
+
+        <Route
+         path="/parkingspace"element={<ParkingSpaces />} />
       </Routes>
     </>
   );
